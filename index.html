@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection " id="home">
+            <div class="leftsection">
+                Hi, My name is
+                <span class="name">Padmavathi</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img height="100%" src="image.jpg" alt="">
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!--This line loads the Typed.js library from jsDelivr CDN ,allowing use Typed.js in your webpage without downloading it manually.-->
+
+        <script>
+
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'Tech Enthusiast', 'Design Lover', 'Quick Learner'],
+                typeSpeed: 50,
+                backSpeed: 25,
+                backDelay: 1000,
+                loop: true
+            });
+        </script>
+        <br>
+        <br> <br> <br>
+
+        <section id="about" class="sec">
+            <div class="newsection">
+                <header class="heading">About Me</header>
+                <div class="arrange">
+                    <div class="firstsec">
+                        <ul>
+                            <li><span class="icon">🛠️</span> Mech Student</li>
+                            <li><span class="icon">💻</span> Web Developer</li>
+                            <li><span class="icon">🎨</span> Design Lover</li>
+                            <li><span class="icon">🧠</span> Problem Solver</li>
+                        </ul>
+                    </div>
+
+                    <div class="line">
+
+                    </div>
+                    <div class="secondsec">
+                        <p>
+                            Hi, I’m Padmavathi 👋, a B.Tech student in Mechanical Engineering at IIT Gandhinagar 🎓. I’m
+                            a curious and passionate learner with a deep interest in technology 💻 and innovation 💡. I
+                            love exploring new things — whether it's discovering a new place 🌍 or picking up a new
+                            skill 🎯. Creativity is a big part of who I am, and I enjoy expressing it through design,
+                            especially using tools like Canva 🎨.
+                            <br>
+                            <br>
+                            <br>
+                            Currently, I’m learning web development and working on building smart solutions to
+                            real-world problems 🔧. I find joy in creating, experimenting, and growing through hands-on
+                            experiences 🚀, always looking for new opportunities to learn and make a meaningful impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<br>
+<br>
+<br><br>
+
+        <section class="thirdsection sec" id="skills">
+
+            <h1>Education Details</h1>
+            <ul>
+                <li><strong>Institute : </strong> Indian Institute of Technology Gandhinagar (IITGN)</li>
+                <li><strong>Program :</strong> Bachelor of Technology (B.Tech)</li>
+                <li><strong>Major:</strong> Mechanical Engineering</li>
+                <li><strong>Duration:</strong> 2024 – 2028</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <h1>Skills</h1>
+            <ul>
+                <li>Language: Python, HTML, CSS, JS</li>
+                <li>Tools : MS Excel, Canva, Figma, SQL, Git</li>
+            </ul>
+        </section>
+<br><br><br>
+
+
+
+        <section class="secondsection sec" id="projects">
+            <h1>Projects</h1>
+            <div class="parking leftsection first">
+                <img src="parking.jpg" alt="parking">
+                <h2>Smart Parking system</h2>
+                <br>
+                <p>An IoT‑based solution that counts empty parking slots and guides drivers in real time.
+                    The system uses IR/ultrasonic sensors at the entry and exit to update the slot count, an I2C LCD to
+                    display availability, and a servo motor to open the gate automatically when a slot is free. Data are
+                    sent to a mobile app.</p>
+                <br>
+                <p>Youtube :
+                    <a class="ytlink" href="https://www.youtube.com/watch?v=QWY_pHujp8w&t=1s">Watch Video</a>
+                </p>
+            </div>
+        </section>
+
+<br>
+<br><br><br>
+
+        <section class="fourthsection sec" id="achievements">
+            <h1 class="section-title">Achievements</h1>
+            <div class="achievement-content">
+                <div class="rightit">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="leftit">
+                    <img height="300px" src="achievement.png" alt="Achievement Image" class="achievement-image">
+                </div>
+            </div>
+        </section>
+        <hr>
+
+
+        <section class="fifthsection sec" id="contact">
+            <h1>Contact</h1>
+            <div class="contact-cards">
+
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/gmail.png" alt="">
+                    <h3>G-Mail</h3>
+                    <a href="mailto:padmavathi0601@gmail.com">padmavathim0601@gmail.com</a>
+                </div>
+
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/linkedin.png" alt="">
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/Padmavathi Madireddi" target="_blank">linkedin.com/in/Padmavathi
+                        Madireddi</a>
+                </div>
+
+                <div class="card">
+                    <img src="https://img.icons8.com/color/96/instagram-new.png" alt="">
+                    <h3>Instagram</h3>
+                    <a href="https://instagram.com/padmavathi_0106" target="_blank">padmavathi_0106</a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

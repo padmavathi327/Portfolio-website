@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.02rem;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 130px 0;
+  height: 50vh;
+}
+
+.leftsection {
+  font-size: 2.6rem;
+  margin: 30px 40px;
+  width: 45%;
+  padding-top: 70px;
+  font-weight: 5;
+}
+
+.name {
+  color: rgb(170, 107, 228);
+}
+
+#element {
+  color: rgb(170, 107, 228);
+}
+
+main hr {
+  border: 0;
+  height: 1.2px;
+  margin: 60px 85px;
+  background: #9c97f1;
+}
+
+.sec {
+  height: 65vh;
+  margin: 30px 140px;
+}
+
+.newsection{
+  height: 55vh;
+  margin-top: 50px;
+  border: solid rgb(170, 107, 228);
+  border-radius: 13px;
+  box-shadow: 0 0 12px rgb(170, 107, 228);
+  padding: 30px 40px;
+}
+
+.heading{
+  text-align: center;
+  color: rgb(170, 107, 228);
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.secondsec{
+  font-size: 18px;
+}
+
+.arrange{
+  display: flex;
+}
+
+.firstsec ul{
+  list-style: none;
+  padding: 0;
+}
+
+.firstsec{
+  width: 20vw;
+  font-size: 20px;
+  color: rgb(191, 135, 244);
+}
+
+.line{
+  height: 42vh;
+  width: 3px;
+  background-color: rgb(170, 107, 228);
+  box-shadow: 0 0 10px rgb(170, 107, 228);
+  margin: 0px 40px;
+}
+
+.firstsec li {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    margin-bottom: 10px;
+    color: rgb(170, 107, 228);
+    font-size: 21px;
+    padding-bottom: 18px;
+}
+
+
+.text {
+  color: rgb(170, 107, 228);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.sec h1 {
+  font-size: 1.8rem;
+  color: rgb(170, 107, 228);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 4px solid rgb(170, 107, 228);
+  padding-left: 10px;
+}
+
+.thirdsection h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.thirdsection ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.achievement-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.thirdsection {
+  padding: 40px 20px;
+  color: white;
+  text-align: left;
+}
+
+.thirdsection ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.thirdsection ul li {
+  padding: 8px 0;
+  font-size: 1rem;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thirdsection ul li strong {
+  color: #ffffff;
+}
+
+.card {
+  border: 2px solid rgb(170, 107, 228);
+  border-radius: 10px;
+  background-color: black;
+  width: 220px;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: rgb(170, 107, 228);
+}
+
+.card a {
+  color: rgb(170, 107, 228);
+  text-decoration: none;
+  font-size: 0.9rem;
+  word-break: break-word;
+  display: block;
+}
+
+.fourthsection {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: rgb(170, 107, 228);
+  margin-bottom: 40px;
+  border-left: 4px solid rgb(170, 107, 228);
+  padding-left: 10px;
+  text-align: left;
+}
+
+.achievement-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+}
+
+.leftit {
+  padding-top: -20px;
+}
+
+.fifthsection h1 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.parking {
+  margin-top: 80px;
+  width: 30vw;
+  border: 2px solid rgb(170, 107, 228);
+  box-shadow: 0 0 15px rgb(170, 107, 228);
+  border-radius: 12px;
+  padding: 25px 15px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.parking h2 {
+  color: rgb(170, 107, 228);
+}
+
+.parking img {
+  width: 29vw;
+  height: 24vh;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.ytlink {
+  color: rgb(170, 107, 228);
+  text-decoration-line: none;
+}
