@@ -17,7 +17,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60px;
+  height: 72px;
   background-color: rgb(18, 18, 62);
 }
 
@@ -27,6 +27,7 @@ nav ul {
 }
 
 nav ul li {
+  font-size: 19px;
   list-style: none;
   margin: 0 23px;
 }
@@ -38,7 +39,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgb(153, 153, 226);
-  font-size: 1.02rem;
+  font-size: 20px;
 }
 
 .left {
@@ -77,10 +78,10 @@ main hr {
 
 .sec {
   height: 65vh;
-  margin: 30px 140px;
+  margin: 80px 140px;
 }
 
-.newsection{
+.newsection {
   height: 55vh;
   margin-top: 50px;
   border: solid rgb(170, 107, 228);
@@ -89,7 +90,7 @@ main hr {
   padding: 30px 40px;
 }
 
-.heading{
+.heading {
   text-align: center;
   color: rgb(170, 107, 228);
   font-size: 40px;
@@ -97,26 +98,26 @@ main hr {
   padding-bottom: 40px;
 }
 
-.secondsec{
+.secondsec {
   font-size: 18px;
 }
 
-.arrange{
+.arrange {
   display: flex;
 }
 
-.firstsec ul{
+.firstsec ul {
   list-style: none;
   padding: 0;
 }
 
-.firstsec{
+.firstsec {
   width: 20vw;
   font-size: 20px;
   color: rgb(191, 135, 244);
 }
 
-.line{
+.line {
   height: 42vh;
   width: 3px;
   background-color: rgb(170, 107, 228);
@@ -125,13 +126,13 @@ main hr {
 }
 
 .firstsec li {
-    display: flex;
-    align-items: center;
-    gap: 12px; 
-    margin-bottom: 10px;
-    color: rgb(170, 107, 228);
-    font-size: 21px;
-    padding-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: rgb(170, 107, 228);
+  font-size: 21px;
+  padding-bottom: 18px;
 }
 
 
@@ -252,6 +253,10 @@ main hr {
   padding-top: -20px;
 }
 
+.fifthsection {
+  padding-top: 40px;
+}
+
 .fifthsection h1 {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -265,8 +270,10 @@ main hr {
 }
 
 .parking {
-  margin-top: 80px;
-  width: 30vw;
+  background-color: #0a0a2a;
+  /* Optional: dark background */
+  width: 34vw;
+  min-height: 420px;
   border: 2px solid rgb(170, 107, 228);
   box-shadow: 0 0 15px rgb(170, 107, 228);
   border-radius: 12px;
@@ -274,9 +281,27 @@ main hr {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+
   overflow: hidden;
+  margin-top: 50px;
+}
+
+.parking p {
+  padding-left: 10px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Allows them to stack on smaller screens */
+  gap: 100px;
+  /* Space between boxes */
+}
+
+
+.parking h2 {
+  color: rgb(170, 107, 228);
 }
 
 .parking h2 {
@@ -284,7 +309,7 @@ main hr {
 }
 
 .parking img {
-  width: 29vw;
+  width: 34vw;
   height: 24vh;
   padding-bottom: 50px;
   border-radius: 15px;
@@ -292,8 +317,401 @@ main hr {
   display: block;
 }
 
+.blog {
+  padding-top: 25px;
+  padding-left: 0px;
+  font-size: 14px;
+}
 
 .ytlink {
   color: rgb(170, 107, 228);
   text-decoration-line: none;
+  font-size: 13px;
+}
+
+.newsection {
+  width: 85vw;
+  height: auto;
+  max-height: none;
+  font-size: 16px;
+  padding: 20px;
+  border: solid rgb(170, 107, 228);
+  border-radius: 13px;
+  box-shadow: 0 0 12px rgb(170, 107, 228);
+}
+
+.line {
+  width: 3px;
+  background-color: rgb(170, 107, 228);
+  box-shadow: 0 0 10px rgb(170, 107, 228);
+  height: auto;
+  align-self: stretch; /* stretches to match sibling height in flex */
+}
+
+
+/*@media (max-width: 1400px) {
+  .parking{
+    width: 85%;
+    min-height: 410px;
+    max-height: 450px;
+  }
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.secondsection{
+  height: 150vh;
+}
+
+  .parking img{
+    width: 100%;
+  }
+
+  .font{
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+
+
+@media (max-width: 1024px){
+  .parking{
+    width: max(80%, 68vw);
+  }
+}
+
+@media (max-width: 650px){
+  .parking{
+    width: max(110%, 80vw);
+  }
+}
+
+@media (max-width: 500px){
+  .parking{
+    width: max(110%, 90vw);
+  }
+}
+
+@media (max-width: 420px){
+  .parking{
+    width: max(110%, 110vw);
+  }
+}
+
+@media (max-width: 375px){
+  .parking{
+    width: max(110%, 125vw);
+  }
+}
+
+
+
+@media (max-width: 1125px){
+.newsection{
+  width: 65vw;
+  min-height: 55vh;
+  min-height: 75vh;
+}
+
+.line{
+  height: 60vh;
+}
+
+.thirdsection{
+  padding-top: 100px;
+}
+}
+
+@media (max-width: 950px){
+.newsection{
+  width: min(75vw,95%);
+}
+}
+
+@media (max-width: 820px){
+.newsection{
+  width: min(80vw,100%);
+  max-height: 600px;
+}
+
+.secondsec{
+  font-size: 16px;
+}
+
+.icon{
+  font-size: 18px;
+}
+}
+
+@media (max-width: 720px){
+.newsection{
+  width: min(85vw,110%);
+  max-height: 750px;
+  font-size: 14px;
+}
+
+.thirdsection{
+  font-size: 18px;
+  width: 80vw;
+}
+}
+
+@media (max-width: 660px){
+  .newsection {
+    width: min(90vw,130%);
+    max-height: 800px;
+    height: auto;
+    font-size: 14px;
+  }
+}
+.firstsec li{
+  font-size: 17px;
+}
+
+@media (max-width: 1024px){
+.firstsec{
+  max-width: 20vw;
+  width: 13vw;
+}
+}*/
+
+@media (max-width: 1400px) {
+  .parking {
+    width: 85%;
+    min-height: 410px;
+    max-height: 450px;
+  }
+
+  .fifthsection{
+    padding-top: 150px;
+  }
+
+  .newsection{
+    margin-top: 150px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .secondsection {
+    height: 150vh;
+  }
+
+  .parking img {
+    width: 100%;
+  }
+
+  .font {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 1570px) {
+  .newsection {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1125px) {
+  .newsection {
+    width: 75vw;
+  }
+
+  .thirdsection {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .parking {
+    width: max(80%, 68vw);
+  }
+
+  .firstsec {
+    max-width: 20vw;
+    width: 13vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .newsection {
+    width: min(85vw, 115%);
+  }
+}
+
+
+
+@media (max-width: 890px) {
+  .newsection {
+    width: min(85vw, 140%);
+  }
+
+  .secondsec {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .newsection {
+    width: min(85vw, 110%);
+    font-size: 14px;
+  }
+
+  .thirdsection {
+    font-size: 18px;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 660px) {
+  .newsection {
+    width: min(90vw, 130%);
+    font-size: 14px;
+  }
+
+  .firstsec li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 650px) {
+  .parking {
+    width: max(110%, 80vw);
+  }
+}
+
+@media (max-width: 605px) {
+  .newsection {
+    width: min(150%, 95vw);
+  }
+}
+
+@media (max-width: 560px) {
+  .newsection {
+    width: min(175%, 100vw);
+  }
+}
+
+@media (max-width: 525px) {
+  .newsection {
+    width: min(200%, 115vw);
+  }
+}
+
+@media (max-width: 490px) {
+  .newsection {
+    width: min(260%, 100vw);
+  }
+}
+
+@media (max-width: 460px) {
+  .newsection {
+    width: min(300%, 105vw);
+  }
+}
+
+@media (max-width: 430px) {
+  .newsection {
+    width: min(360%, 115vw);
+  }
+
+  .firstsec li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .newsection {
+    width: min(450%, 125vw);
+  }
+}
+
+@media (max-width: 380px) {
+  .newsection{
+    width: min(510%, 145vw);
+  }
+}
+
+@media (max-width: 500px) {
+  .parking {
+    width: max(110%, 90vw);
+  }
+}
+
+@media (max-width: 420px) {
+  .parking {
+    width: max(110%, 110vw);
+  }
+}
+
+@media (max-width: 375px) {
+  .parking {
+    width: max(110%, 125vw);
+  }
+}
+
+
+
+
+
+
+@media (max-width: 340px) {
+  .newsection {
+    width: 100vw;
+    font-size: 12.4px;
+  }
+}
+
+@media (max-width: 320px) {
+  .newsection {
+    width: 100vw;
+    font-size: 12.2px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .newsection {
+    width: 100vw;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 280px) {
+  .newsection {
+    width: 100vw;
+    font-size: 11.8px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 280px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 70vw; 
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: max(300px, 80vw);
+  }
 }
